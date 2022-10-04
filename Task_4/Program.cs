@@ -4,13 +4,16 @@ int a = int.Parse (userInput1);
 Console.Write("Введите второе целое число: ");
 string userInput2 = Console.ReadLine() ??"";
 int b = int.Parse (userInput2);
-if (a > b)
+Console.Write("Введите третье целое число: ");
+string userInput3 = Console.ReadLine() ??"";
+int c = int.Parse (userInput3);
+int max = a;
+if (b > max)
 {
-    Console.WriteLine($"max = {a}");
-    Console.WriteLine($"min = {b}");
-}
-else
+    max = b;
+} 
+if (c > max)
 {
-   Console.WriteLine($"max = {b}");
-   Console.WriteLine($"min = {a}");
+    max = c;
 }
+Console.Write($"max -> {max}");
