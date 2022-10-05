@@ -1,17 +1,14 @@
 ﻿Console.Write("Введите целое число: ");
-string userInput1 = Console.ReadLine() ?? "";
-int N = int.Parse(userInput1);
+string userInput = Console.ReadLine() ?? "";
+int N = int.Parse(userInput);
 
-int num = 1;
+int a = 1;
 
-while (num < N)
+while (a < N + 1)
 {
-    if (num % 2 == 0);
+    if (a % 2 == 0)
     {
-        Console.WriteLine($"{num}");
-        num++;  
+        Console.WriteLine($"{a}");
     }
+    a++;
 }
-        
-    
-    
